@@ -1,0 +1,544 @@
+@import url(./index.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #fff; */
+}
+/* navbar start */
+.container{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:#000;
+    position:sticky;
+    top: 0;
+}
+
+.list{
+    width: 60%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    
+}
+
+.list a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.container #apple{
+    display: none;
+}
+
+.container #search{
+    display: none;
+}
+
+.container #bag{
+    display: none;
+}
+
+.checked, #check{
+    display: none;
+}
+
+@media (max-width:1000px) {
+    .container #apple{
+        display: block;
+        cursor: pointer;
+    }
+     
+    .container #search{
+        display: block;
+        cursor: pointer;
+    }
+    
+    .container #bag{
+        display: block;
+        cursor: pointer;
+    } 
+
+    .checked{
+        display: block;
+        cursor: pointer;
+    }
+
+    .container .list{
+        display: block;
+       position: fixed;
+       top: 50px;
+       top: -150%;
+       width: 100%;
+       height: 100vh;
+       background-color: white;
+       transition: all .5s;
+       padding-top: 50px;
+       z-index: 1;
+      
+    }
+
+    .list a{
+        color: #000;
+    }
+
+    .container .list li i{
+        display: none;
+    }
+
+    .container .list li{
+        font-size: 5vw;
+        padding:0px 10px 10px 50px;
+        font-weight: bold;
+        
+    }
+
+    #check:checked~.list{
+       top: 5%;
+    }
+
+    .bki .x1{
+        flex-direction: column;
+    }
+    .bki .x2{
+        flex-direction: column;
+    }
+    .bki .x3{
+        flex-direction: column;
+    }
+    footer .ft{
+        display: none;
+    }
+    footer .para{
+        width: 100%;
+    }
+   
+}
+/* navbar end */
+
+
+/* add start */
+
+.add{
+    padding:10px 0px 10px 0px;
+    text-align: center;
+}
+/* add end */
+
+
+/* card1 start */
+
+.card1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: white;
+}
+
+.card1 img{
+    width: 80%;
+    margin-top: 10px;
+}
+/* card1 end */
+
+/* card2 start */
+
+.card2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: black;
+}
+
+.card2 img{
+    width: 80%;
+    margin-top: 10px;
+}
+/* card2 end */
+
+
+/* card3 start */
+
+.card3{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card3 .div1{
+    text-align: center;
+}
+/* card3 end */
+
+/* bki start here */
+.bki{
+    width: 100%;
+}
+.bki .x1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    line-height: 20px;
+    
+}
+.bki .x1 .a1{
+    width: 100%;
+    height: 100%;
+    margin: 10px 10px 5px 10px;
+    background-color: #fff;
+    text-align: center;
+}
+.bki .x1 .a2{
+    width: 100%;
+    height: 100%;
+    margin: 0px 10px 5px 0px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+.bki .x2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.bki .x2 .a3{
+    width: 100%;
+    height: 100%;
+    margin: 0px 10px 5px 10px;
+    background-color: #fff;
+    text-align: center;
+}
+.bki .x2 .a4{
+    width: 100%;
+    height: 100%;
+    margin: 0px 10px 5px 0px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+.bki .x3{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.bki .x3 .a5{
+    width: 100%;
+    height: 100%;
+    margin: 0px 10px 5px 10px;
+    background-color: #fff;
+    text-align: center;
+}
+.bki .x3 .a6{
+    width: 100%;
+    height: 100%;
+    margin: 10px 10px 5px 0px;
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+}
+
+/* footer start */
+footer{
+    width: 100%;
+    height: 100vh;
+}
+footer .para{
+    width: 75%;
+    height: fit-content;
+    color: gray;
+    margin: 1.5vw auto;
+}
+footer .para1{
+    width: 75%;
+    height: fit-content;
+    color: gray;
+    margin: 1vw auto;
+    text-align: start;
+    padding: 0.5vw;
+    border-bottom: 1px solid gray;
+}
+footer .ft{
+    width: 75%;
+    height: fit-content;
+    margin: 1vw auto;
+    font-size: 1vw;
+    color: gray;
+}
+table{
+    width: 100%;
+    padding-left: 0;
+    padding-top: 1vw;
+    padding-bottom: 0.4vw;
+    cursor: pointer;
+    border-top: 1px solid gray;
+    
+}
+table td{
+    padding-top: 1vw;
+}
+.para1 a{
+    color: #0066cc;
+}
+.copyright{
+    width: 75%;
+    margin:2vw auto;
+    color: gray;
+    text-align: start;
+}
+.copyright a{
+    text-decoration: none;
+    color: gray;
+    padding: 10px;
+    border-right: 1px solid gray;
+}
+
+
+/* ---------------------------------------------------------------------- */
+
+
+.label{
+    display: block;
+}
+.span{
+    float: right;
+}
+.o1{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+.h1{
+    width: 100%;
+    height: fit-content;
+    display: none;
+}
+.h1 li{
+    list-style: none;
+}
+.h1 li a{
+    text-decoration: none;
+    color: black;
+}
+#op{
+    display: none;
+}
+#op:checked~.h1{
+    display: block;
+}
+
+.o2{
+    border-bottom: 1px solid black;
+    padding: 10px; 
+}
+.h2{
+    width: 100%;
+    height: fit-content;
+    display: none;
+}
+.h2 li{
+    list-style: none;
+}
+.h2 li a{
+    text-decoration: none;
+    color: black;
+}
+#op1{
+    display: none;
+}
+#op1:checked~.h2{
+    display: block;
+}
+
+.o3{
+    border-bottom: 1px solid black;
+    padding: 10px; 
+}
+.h3{
+    width: 50%;
+    height: fit-content;
+    display: none;
+   
+}
+.h3 li{
+    list-style: none;
+}
+.h3 li a{
+    text-decoration: none;
+    color: black;
+}
+#op2{
+    display: none;
+}
+#op2:checked~.h3{
+    display: block;
+}
+
+.o4{
+    border-bottom: 1px solid black;
+    padding: 10px; 
+}
+.h4{
+    width: 50%;
+    height: fit-content;
+    display: none;
+}
+.h4 li{
+    list-style: none;
+}
+.h4 li a{
+    text-decoration: none;
+    color: black;
+}
+#op3{
+    display: none;
+}
+#op3:checked~.h4{
+   display: block;
+}
+
+.o5{
+    border-bottom: 1px solid black;
+    padding: 10px; 
+}
+.h5{
+    width: 50%;
+    height: fit-content;
+    display: none;
+   
+}
+.h5 li{
+    list-style: none;
+}
+.h5 li a{
+    text-decoration: none;
+    color: black;
+}
+#op4{
+    display: none;
+}
+#op4:checked~.h5{
+   display: block;
+}
+
+.o6{
+    border-bottom: 1px solid black;
+    padding: 10px; 
+}
+.h6{
+    width: 50%;
+    height: fit-content;
+    display: none;
+   
+}
+.h6 li{
+    list-style: none;
+}
+.h6 li a{
+    text-decoration: none;
+    color: black;
+}
+#op5{
+    display: none;
+}
+#op5:checked~.h6{
+    display: block;
+}
+
+.o7{
+    border-bottom: 1px solid black;
+    padding: 10px; 
+}
+.h7{
+    width: 50%;
+    height: fit-content;
+    display:none;
+   
+}
+.h7 li{
+    list-style: none;
+}
+.h7 li a{
+    text-decoration: none;
+    color: black;
+}
+#op6{
+    display: none;
+}
+#op6:checked~.h7{
+    display: block;
+}
+
+.o8{
+    border-bottom: 1px solid black;
+    padding: 10px; 
+}
+.h8{
+    width: 50%;
+    height: fit-content;
+    display:none;
+   
+}
+.h8 li{
+    list-style: none;
+}
+.h8 li a{
+    text-decoration: none;
+    color: black;
+}
+#op7{
+    display: none;
+}
+#op7:checked~.h8{
+    display: block;
+}
+
+
+.o9{
+    border-bottom: 1px solid black;
+    padding: 10px; 
+}
+.h9{
+    width: 50%;
+    height: fit-content;
+    display:none;
+   
+}
+.h9 li{
+    list-style: none;
+}
+.h9 li a{
+    text-decoration: none;
+    color: black;
+}
+#op8{
+    display: none;
+}
+#op8:checked~.h9{
+   display: block;
+}
+
+.options{
+    display: none;
+}
+@media  (max-width:1000px) {
+    .options{
+        display: block;
+    }
+}
